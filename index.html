@@ -282,6 +282,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -289,14 +292,74 @@ button.code-folding-btn:focus {
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -370,9 +433,9 @@ $(document).ready(function () {
 <ul>
 <li>Analysis and benchmarking results of simulation settings with <em>cubic</em> informative covariate, normal test statistics and unimodal effect size distributions.</li>
 </ul></li>
-<li><a href="additionalfile13_simulations-uasettings-t.html">Additional file 13 - **Simulations VII: Unimodal Effect Sizes (_t_11 test statistics).**</a>
+<li><a href="additionalfile13_simulations-uasettings-t.html">Additional file 13 - <strong>Simulations VII: Unimodal Effect Sizes (<span class="math inline">\(t_{11}\)</span> test statistics).</strong></a>
 <ul>
-<li>Analysis and benchmarking results of simulation settings with <em>cubic</em> informative covariate, _t_11 distributed test statistics and unimodal effect size distributions.</li>
+<li>Analysis and benchmarking results of simulation settings with <em>cubic</em> informative covariate, <span class="math inline">\(t_{11}\)</span> distributed test statistics and unimodal effect size distributions.</li>
 </ul></li>
 <li><a href="additionalfile14_simulations-uasettings-nonnull25.html">Additional file 14 - <strong>Simulations VIII: Unimodal Effect Sizes (25% non-null).</strong></a>
 <ul>
@@ -386,15 +449,15 @@ $(document).ready(function () {
 <ul>
 <li>Analysis and benchmarking results of simulation settings with <em>sine</em> informative covariate, normal test statistics, and varying proportion of null hypotheses.</li>
 </ul></li>
-<li><a href="additionalfile17_simulations-varyingpi0-t.html">Additional file 17 - **Simulations XI: Varying Null Proportion (_t_11 test statistics).**</a>
+<li><a href="additionalfile17_simulations-varyingpi0-t.html">Additional file 17 - <strong>Simulations XI: Varying Null Proportion (<span class="math inline">\(t_{11}\)</span> test statistics).</strong></a>
 <ul>
-<li>Analysis and benchmarking results of simulation settings with <em>sine</em> informative covariate, _t_11 distributed test statistics, and varying proportion of null hypotheses.</li>
+<li>Analysis and benchmarking results of simulation settings with <em>sine</em> informative covariate, <span class="math inline">\(t_{11}\)</span> distributed test statistics, and varying proportion of null hypotheses.</li>
 </ul></li>
-<li><a href="additionalfile18_simulations-varyinginformativeness-discrete.html">Additional file 18 - <strong>Simulations XII: Varying Informativeness (continuous p(x;delta)).</strong></a>
+<li><a href="additionalfile18_simulations-varyinginformativeness-discrete.html">Additional file 18 - <strong>Simulations XII: Varying Informativeness (continuous <span class="math inline">\(p(x;\delta)\)</span>).</strong></a>
 <ul>
 <li>Analysis and benchmarking results of simulation settings with informative covariates of varying informativeness using a continuous relationship between the covariate and the null proportion.</li>
 </ul></li>
-<li><a href="additionalfile19_simulations-varyinginformativeness-smooth.html">Additional file 19 - <strong>Simulations XIII: Varying Informativeness (discrete p(x;delta)).</strong></a>
+<li><a href="additionalfile19_simulations-varyinginformativeness-smooth.html">Additional file 19 - <strong>Simulations XIII: Varying Informativeness (discrete <span class="math inline">\(p(x;\delta)\)</span>).</strong></a>
 <ul>
 <li>Analysis and benchmarking results of simulation settings with informative covariates of varying informativeness using a discrete relationship between the covariate and the null proportion.</li>
 </ul></li>
