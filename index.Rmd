@@ -1,0 +1,103 @@
+---
+title: Additional files for _A practical guide to methods controlling false discoveries in computational biology_
+author: Keegan Korthauer, Patrick K Kimes, Claire Duvallet, Alejandro Reyes, Ayshwarya Subramanian, Mingxiang Teng, Chinmay Shukla, Eric J Alm, and Stephanie C Hicks
+---
+
+This repository contains the knitted Rmarkdown vignettes for simulations and case studies described in [_A practical guide to methods controlling false discoveries in computational biology_](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1716-1). The Rmarkdown files are also available in the companion [`benchmark-fdr` repo on GitHub](https://github.com/pkimes/benchmark-fdr/commits/fa6267ab81e9a327edc03ded0f50e39205c792c5).
+
+## Yeast _in silico_ experiments
+
+- [Additional file 2 - **Yeast _in silico_ experiments I.**](additionalfile02_yeast-simulation-highpi0.html)
+  - Analysis and benchmarking results under the null, and using a unimodal alternative effect size distribution and large proportion (30%) of non-nulls using yeast RNA-seq data. 
+- [Additional file 3 - **Yeast _in silico_ experiments II.**](additionalfile03_yeast-simulation.html)
+  - Analysis and benchmarking results using a unimodal alternative effect size distribution and small proportion (7.5%) of non-nulls using yeast RNA-seq data. 
+- [Additional file 4 - **Yeast _in silico_ experiments III.**](additionalfile04_yeast-simulation-bimodalalternative-highpi0.html)
+  - Analysis and benchmarking results using a bimodal alternative effect size distribution and large proportion (30%) of non-nulls using yeast RNA-seq data. 
+- [Additional file 5 - **Yeast _in silico_ experiments IV.**](additionalfile05_yeast-simulation-bimodalalternative.html)
+  - Analysis and benchmarking results using a bimodal alternative effect size distribution and small proportion (7.5%) of non-nulls using yeast RNA-seq data.
+
+## Polyester _in silico_ experiments
+
+- [Additional file 6 - **Polyester _in silico_ experiments.**](additionalfile06_polyester-simulation.html)
+  - Analysis and benchmarking results using a bimodal alternative effect size distribution and large proportion (30%) of non-nulls using RNA-seq data simulated using Polyester.
+
+## Simulation experiments
+
+- [Additional file 7 - **Simulations I: Null.**](additionalfile07_simulations-null.html)
+  - Analysis and benchmarking results of simulation settings with only null tests, using normal, _t_, and chi-squared distributed test statistics.
+- [Additional file 8 - **Simulations II: Informative (cubic).**](additionalfile08_simulations-informative-cubic.html)
+  - Analysis and benchmarking results of simulation settings with _cubic_ informative covariate and normal, _t_, and chi-squared distributed test statistics.
+- [Additional file 9 - **Simulations III: Informative (step).**](additionalfile09_simulations-informative-step.html)
+  - Analysis and benchmarking results of simulation settings with _step_ informative covariate and normal, _t_, and chi-squared distributed test statistics. 
+- [Additional file 10 - **Simulations IV: Informative (sine).**](additionalfile10_simulations-informative-sine.html)
+  - Analysis and benchmarking results of simulation settings with _sine_ informative covariate and normal, _t_, and chi-squared distributed test statistics. 
+- [Additional file 11 - **Simulations V: Informative (cosine).**](additionalfile11_simulations-informative-cosine.html)
+  - Analysis and benchmarking results of simulation settings with _cosine_ informative covariate and normal, _t_, and chi-squared distributed test statistics. 
+- [Additional file 12 - **Simulations VI: Unimodal Effect Sizes.**](additionalfile12_simulations-uasettings.html)
+  - Analysis and benchmarking results of simulation settings with _cubic_ informative covariate, normal test statistics and unimodal effect size distributions. 
+- [Additional file 13 - **Simulations VII: Unimodal Effect Sizes ($t_{11}$ test statistics).**](additionalfile13_simulations-uasettings-t.html)
+  - Analysis and benchmarking results of simulation settings with _cubic_ informative covariate, $t_{11}$ distributed test statistics and unimodal effect size distributions. 
+- [Additional file 14 - **Simulations VIII: Unimodal Effect Sizes (25% non-null).**](additionalfile14_simulations-uasettings-nonnull25.html)
+  - Analysis and benchmarking results of simulation settings with _cubic_ informative covariate, normal test statistics, unimodal effect size distributions, and higher (25% vs 10%) proportion of non-null tests. 
+- [Additional file 15 - **Simulations IX: Varying $M$ Tests.**](additionalfile15_simulations-varyingntests.html)
+  - Analysis and benchmarking results of simulation settings with _sine_ informative covariate, normal test statistics, and varying total number of hypothesis tests. 
+- [Additional file 16 - **Simulations X: Varying Null Proportion.**](additionalfile16_simulations-varyingpi0.html)
+  - Analysis and benchmarking results of simulation settings with _sine_ informative covariate, normal test statistics, and varying proportion of null hypotheses. 
+- [Additional file 17 - **Simulations XI: Varying Null Proportion ($t_{11}$ test statistics).**](additionalfile17_simulations-varyingpi0-t.html)
+  - Analysis and benchmarking results of simulation settings with _sine_ informative covariate, $t_{11}$ distributed test statistics, and varying proportion of null hypotheses. 
+- [Additional file 18 - **Simulations XII: Varying Informativeness (continuous $p(x;\delta)$).**](additionalfile18_simulations-varyinginformativeness-discrete.html)
+  - Analysis and benchmarking results of simulation settings with informative covariates of varying informativeness using a continuous relationship between the covariate and the null proportion. 
+- [Additional file 19 - **Simulations XIII: Varying Informativeness (discrete $p(x;\delta)$).**](additionalfile19_simulations-varyinginformativeness-smooth.html)
+  - Analysis and benchmarking results of simulation settings with informative covariates of varying informativeness using a discrete relationship between the covariate and the null proportion.
+- [Additional file 20 - **Simulations XIV: AdaPT with null option.**](additionalfile20_simulations-informative-step-nullAdaPT.html)
+  - Analysis and benchmarking results of simulation settings with _step_ informative covariate comparing AdaPT with and without a null model option.
+
+## Case studies
+
+- [Additional file 21 - **Case study: Genome-wide association studies.**](additionalfile21_GWAS.html)
+  - Analysis and benchmarking results of a meta-analysis of genome-wide association studies of body mass index.
+- [Additional file 22 - **Case study: Gene set analyses I.**](additionalfile22_goseq-mouse.html)
+  - Gene set analysis of differentially expressed mouse genes after HSC differentiation using goSeq.
+- [Additional file 23 - **Case study: Gene set analyses II.**](additionalfile23_goseq-human.html)
+  - Gene set analysis of differentially expressed human genes between cerebellum and cerebral cortex using goSeq.
+- [Additional file 24 - **Case study: Gene set analyses III.**](additionalfile24_fgsea-mouse.html)
+  - Gene set analysis and benchmarking results of differentially expressed mouse genes after HSC differentiation using GSEA.
+- [Additional file 25 - **Case study: Gene set analyses IV.**](additionalfile25_fgsea-human.html)
+  - Gene set analysis and benchmarking results of differentially expressed human genes between cerebellum and cerebral cortex using GSEA.
+- [Additional file 26 - **Case study: Differential gene expression in bulk RNA-seq I.**](additionalfile26_RNAseq-gtex.html)
+  - Differential expression analysis and benchmarking results of human genes between nucleus accumbens and putamen.
+- [Additional file 27 - **Case study: Differential gene expression in bulk RNA-seq II.**](additionalfile27_RNAseq-mir200c.html)
+  - Differential expression analysis and benchmarking results of human genes between microRNA knockdown and control mouse cells.
+- [Additional file 28 - **Case study: Differential gene expression in single-cell RNA-seq I.**](additionalfile28_scrnaseq-human-mast.html)
+  - Single-cell differential expression analysis and benchmarking results between human glioblastoma tumor cells and nearby controls using MAST.
+- [Additional file 29 - **Case study: Differential gene expression in single-cell RNA-seq II.**](additionalfile29_scrnaseq-human-scdd.html)
+  - Single-cell differential expression analysis and benchmarking results between human glioblastoma tumor cells and nearby controls using scDD.
+- [Additional file 30 - **Case study: Differential gene expression in single-cell RNA-seq III.**](additionalfile30_scrnaseq-human-wilcox.html)
+  - Single-cell differential expression analysis and benchmarking results between human glioblastoma tumor cells and nearby controls using Wilcox.
+- [Additional file 31 - **Case study: Differential gene expression in single-cell RNA-seq IV.**](additionalfile31_scrnaseq-mouse-mast.html)
+  - Single-cell differential expression analysis and benchmarking results between stimulated murine macrophage cells and controls using MAST.
+- [Additional file 32 - **Case study: Differential gene expression in single-cell RNA-seq V.**](additionalfile32_scrnaseq-mouse-scdd.html)
+  - Single-cell differential expression analysis and benchmarking results between stimulated murine macrophage cells and controls using scDD.
+- [Additional file 33 - **Case study: Differential gene expression in single-cell RNA-seq VI.**](additionalfile33_scrnaseq-mouse-wilcox.html)
+  - Single-cell differential expression analysis and benchmarking results between stimulated murine macrophage cells and controls using Wilcox.
+- [Additional file 34 - **Case study: Differential binding in ChIP-seq I.**](additionalfile34_ChIPseq-h3k4me3-promoters.html)
+  - Differential binding analysis and benchmarking results of H3K4me3 between two cell lines in promoter regions using DESeq2. 
+- [Additional file 35 - **Case study: Differential binding in ChIP-seq II.**](additionalfile35_ChIPseq-h3k4me3-csaw.html)
+  - Differential binding analysis and benchmarking results of H3K4me3 between two cell lines using csaw.
+- [Additional file 36 - **Case study: Differential binding in ChIP-seq III.**](additionalfile36_ChIPseq-CBP-csaw.html)
+  - Differential binding analysis and benchmarking results of CREB-binding protein between knockout and wild-type mice using csaw.
+- [Additional file 37 - **Case study: Differential abundance testing in microbiome data analysis I.**](additionalfile37_microbiome-goodrich.html)
+  - Differential abundance analysis and benchmarking results of obesity.
+- [Additional file 38 - **Case study: Differential abundance testing in microbiome data analysis II.**](additionalfile38_microbiome-papa.html)
+  - Differential abundance analysis and benchmarking results of IBD.
+- [Additional file 39 - **Case study: Differential abundance testing in microbiome data analysis III.**](additionalfile39_microbiome-schubert.html)
+  - Differential abundance analysis and benchmarking results of infectious diarrhea.
+- [Additional file 40 - **Case study: Differential abundance testing in microbiome data analysis IV.**](additionalfile40_microbiome-baxter.html)
+  - Differential abundance analysis and benchmarking results of colorectal cancer.
+- [Additional file 41 - **Case study: Correlation testing in microbiome data analysis.**](additionalfile41_microbiome-enigma.html)
+  - Correlation analysis and benchmarking results of wastewater contaminants.
+
+## Referee response
+
+- [Referee response R1 - **Simulations: Violation of covariate independence under the null.**](simulations-nulldependent-cubic.html)
+  - Analysis and benchmarking results of simulation settings with either weak or strong dependence between p-values and covariate under the null (assumption violated), using normal distributed test statistics.
